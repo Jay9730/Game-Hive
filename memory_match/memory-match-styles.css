@@ -1,0 +1,72 @@
+/* Reset Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Adjust to the desired height */
+}
+
+/* Game Grid Styles */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+/* Card Styles */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card.matched {
+    background-color: lightgreen;
+}
+
+.card.open {
+    background-color: lightblue;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Reset Button Styles */
+.reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Shuffle Button Styles */
+.shuffle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.shuffle-btn:hover {
+    background-color: aquamarine; /* Darken the color on hover */
+}
+.reset-btn:hover {
+    background-color:  aquamarine; /* Darken the color on hover */
+}

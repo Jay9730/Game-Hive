@@ -1,0 +1,101 @@
+/* Resetting Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 15px;
+    margin: 25px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(244, 244, 244);
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    transform: translateY(-10px);
+    background-color: wheat;
+}
+
+/* Reset Button Styles */
+.reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #45a049;
+}
+
+/* Message Styles */
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+/* Winner Styles */
+.winner {
+    color: #4CAF50;
+    animation: drawLine 1s forwards;
+}
+
+@keyframes drawLine {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+/* Winning Cell Styles */
+.winning-cell {
+    text-decoration: line-through;
+}

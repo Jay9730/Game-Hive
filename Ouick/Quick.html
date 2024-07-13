@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Game</title>
+    <link rel="stylesheet" href="Quick.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box-container">
+            <h1>Reaction Time Game</h1>
+            <p>Click on the colored box as quickly as you can after it appears!</p>
+            <div id="box" class="box" onclick="handleClick(event)">
+                <div class="small-box"></div>
+                <p id="timer"></p>
+            </div>
+            <div id="controls">
+                <button onclick="resetGame()">Reset</button>
+                <button onclick="startGame()">Start</button>
+            </div>
+        </div>
+        <div id="previousTries">
+            <h2>Previous Tries</h2>
+            <ul id="tryList"></ul>
+            <div id="averageTime"></div>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="Quick.js"></script>
+</body>
+</html>
